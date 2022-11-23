@@ -116,7 +116,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    width: 90%;
+    padding: 0 1rem;
 }
 
 @media (min-width: 768px) {
@@ -174,8 +174,14 @@ h3 {
 }
 
 .producto__nombre {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 0.5rem 0;   
+}
+
+@media (min-width:768px) {
+    .producto__nombre {
+        font-size: 2rem;
+    }
 }
 
 .producto__precio {
@@ -196,7 +202,7 @@ h3 {
 .footer {
     background-color: var(--primarioVar);
     padding: 1rem 0;
-    margin-top: 2rem;
+    margin-top: 4rem;
 
 }
 
