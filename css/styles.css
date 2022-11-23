@@ -240,3 +240,33 @@ h3 {
         grid-column: 2 / 3;
     }
 }
+
+/* Items */
+
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.items__img {
+    width: 100%;
+}
+
+.item__titulo {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.items__desc {
+    font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+    .items {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
