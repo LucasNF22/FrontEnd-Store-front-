@@ -37,7 +37,7 @@ p {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 
@@ -51,7 +51,7 @@ h3 {
 }
 
 h1 {
-    font-size: 2.83rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
 }
 
@@ -169,8 +169,6 @@ h3 {
 
 .producto__imagen {
     border-radius: 0.2rem;
-    width: 100%;
-
 }
 
 .producto__nombre {
@@ -203,7 +201,6 @@ h3 {
     background-color: var(--primarioVar);
     padding: 1rem 0;
     margin-top: 4rem;
-
 }
 
 .footer__texto {
@@ -229,7 +226,6 @@ h3 {
 
 .nosotros__imagen {
     grid-row: 1 / 2;
-    width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -258,21 +254,83 @@ h3 {
     text-align: center;
 }
 
-.items__img {
-    width: 100%;
-}
-
 .item__titulo {
     font-size: 1.5rem;
     margin: 0;
 }
 
-.items__desc {
-    font-size: 0.8rem;
+.item__desc {
+    font-size: 1rem;
 }
 
 @media (min-width: 768px) {
     .items {
         grid-template-columns: repeat(4, 1fr);
     }
+}
+
+/* pagina producto */
+
+.remera {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+@media (min-width:768px) {
+    .remera {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.formulario {
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.formulario__input {
+    border: 0.5rem solid var(--primarioVar);
+    background-color: transparent;
+    color: var(--blanco);
+    font-size: 1rem;
+    padding: 1.5rem 0.5rem;
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+}
+
+.formulario__input option{
+    background-color: var(--primarioVar);    
+}
+
+.formulario__submit {
+    background-color: var(--secundario);
+    border: none;
+    padding: 1.5rem 1rem;
+    font-family: var(--fuentePrincipal);
+    font-size: 1.5rem;    
+}
+
+.formulario__submit:hover {
+    color: var(--blanco);
+    background-color: var(--secundarioVar);
+}
+
+.boton-volver {
+    align-self: flex-start;
+    margin-left: 2rem;
+    font-family: var(--fuentePrincipal);
+    color:var(--blanco)
+}
+
+@media (min-width: 768px) {
+    .formulario {
+        grid-template-columns: repeat(2, 1fr);    
+    }
+    .formulario__submit {
+        grid-column: 1 / 3;
+    }
+    
 }
